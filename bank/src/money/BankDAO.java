@@ -10,7 +10,7 @@ public class BankDAO {
 	
 	Connection con;
 	PreparedStatement ps;
-	String url = "jdbc:mysql://localhost:3306/thirdTest";
+	String url = "jdbc:mysql://localhost:3306/bank";
 	String user = "root";
 	String password = "1234"; 
 	ResultSet rs;
@@ -28,7 +28,7 @@ public class BankDAO {
 		
 		ps.setString(1, dto.getId());
 		ps.setString(2, dto.getName());
-		ps.setInt(3, dto.getAge());
+		ps.setString(3, dto.getAge());
 		ps.setString(4, dto.getTel());
 		
 		System.out.println("객체화 완료");
@@ -109,7 +109,7 @@ public class BankDAO {
 			dto = new BankDTO();
 			String id = rs.getString(1);
 			String name = rs.getString(2);
-			int age = rs.getInt(3);
+			String age = rs.getString(3);
 			String tel = rs.getString(4);
 			
 			dto.setId(id);

@@ -1,4 +1,4 @@
-create database thirdTest;
+create database bank;
 
 show databases;
 
@@ -11,7 +11,7 @@ create table bank(
 
 desc bank; 
 
-insert into bank values(?,?,?,?);
+insert into bank values(test1,hong,23,);
 
 select * from bank;
 

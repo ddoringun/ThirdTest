@@ -4,7 +4,7 @@ public class BankDTO {
 	
 	private String id;
 	private String name;
-	private int age;
+	private String age;
 	private String tel;
 	
 	
@@ -20,10 +20,10 @@ public class BankDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getAge() {
+	public String getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 	public String getTel() {

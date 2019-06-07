@@ -100,7 +100,7 @@ public class BankManager {
 			public void actionPerformed(ActionEvent e) {
 				dto.setId(idT.getText());
 				dto.setName(nameT.getText());
-				dto.setAge(Integer.parseInt(ageT.getText()));
+				dto.setAge(ageT.getText());
 				dto.setTel(telT.getText());
 
 				BankDAO dao = new BankDAO();
